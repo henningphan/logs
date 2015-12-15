@@ -1,0 +1,23 @@
+Random seed: 0
+4291 4 time=(6)
+4653 2 ~Ed
+4654 2 time=(4)
+4670 2 $~~Ed
+4670 3 ~Ed
+4671 2 drop=(2)
+4671 3 drop=(2)
+4874 1 ~Ed
+4875 1 time=(3)
+4991 3 R~~Ed
+4992 3 time=(3)
+5004 1 ~~Ed
+5005 1 drop=(1)
+5012 1 i~~Ed
+5013 1 drop=(2)
+5046 2 R~~Ed
+5047 2 time=(7)
+5183 1 R~~Ed
+5184 1 time=(8)
+TEST TIMEOUT
+TEST FAILED
+Test ended at simulation time: 300002088

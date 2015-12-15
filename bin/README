@@ -1,0 +1,8 @@
+#use singleGraph to clean the data from simulations
+for f in ../data/xx_con.log*; do ./singleGraph "$f" > ./data_single.xx/${f##*/}; done
+
+# use merger to create a joined file
+ ./merge.pl ./data_single/*
+
+#area.pl uses the output of merge.pl
+./merge.pl ./data_single/* | ./area.pl > output
