@@ -1,7 +1,0 @@
-set yrange[0:90]
-set xrange[0:200000]
-
-set xtics("50" 50000, "100" 100000, "150" 150000, "200" 200000)
-set title "Comparison of smoothed avg "
-plot "smooth_link_20_filter" w steps title "link_20 avg", "smooth_link_10_filter" w steps title "link_10 avg", "smooth_vanilla_filter" w steps title "vanilla avg"
-pause -1
