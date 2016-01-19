@@ -1,4 +1,4 @@
 #!/bin/bash
-./merge.pl "$1"/* | ./avg.pl >avg
-./merge.pl "$1"/* | ./area.pl >area
-join area avg > collection
+./merge.pl "$1"/* 2>/dev/null| ./avg.pl >avg
+./merge.pl "$1"/* 2>/dev/null| ./area.pl >area
+join area avg > collection 
