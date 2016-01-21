@@ -6,7 +6,7 @@ foreach $x (@ARGV){
   chomp(@lines= <$f>);
 
   foreach $x (@lines){
-    push @sum, (split(" ",$x))[1];
+    push @sum, (split(" ",$x))[3];
   }
   close($f);
 
