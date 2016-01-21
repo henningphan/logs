@@ -1,38 +1,38 @@
 set yrange[0:90]
 set xrange[0:50000]
-set multiplot layout 2,2
+set multiplot layout 2,2 title "Linkreliability code convergence with different # of node"
 set xlabel "seconds"
 set ylabel "# assigned nodes"
 set xtics ("10" 10000, "20" 20000, "30" 30000, "40" 40000,"50" 50000, "100" 100000, "150" 150000, "200" 200000, "250" 250000, "300" 300000)
 
 
-#set title "4 nodes"
-#plot "link_4_steps" u 1:4:2 w filledcurves above title "below", "" u 1:4:3 w filledcurves below title "above","" u 1:4 w lines title "avg";
-#set xlabel ""
-#set ylabel ""
-#set title "9 nodes"
-#unset key
-#plot "link_9_steps" u 1:4:2 w filledcurves above title "below", "" u 1:4:3 w filledcurves below title "above","" u 1:4 w lines title "avg";
-#set title "16 nodes"
-#unset key
-#plot "link_16_steps" u 1:4:2 w filledcurves above title "below", "" u 1:4:3 w filledcurves below title "above","" u 1:4 w lines title "avg";
-#set title "25 nodes"
-#unset key
-#plot "link_25_steps" u 1:4:2 w filledcurves above title "below", "" u 1:4:3 w filledcurves below title "above","" u 1:4 w lines title "avg";
-
-
-set title "36 nodes"
-plot "link_36_steps" u 1:4:2 w filledcurves above title "below", "" u 1:4:3 w filledcurves below title "above","" u 1:4 w lines title "avg";
+set title "4 nodes"
+plot "link_4_steps" u 1:4:2 w filledcurves above title "below", "" u 1:4:3 w filledcurves below title "above","" u 1:4 w lines title "avg";
 set xlabel ""
 set ylabel ""
+set title "9 nodes"
 unset key
-set title "49 nodes"
-plot "link_49_steps" u 1:4:2 w filledcurves above title "below", "" u 1:4:3 w filledcurves below title "above","" u 1:4 w lines title "avg";
+plot "link_9_steps" u 1:4:2 w filledcurves above title "below", "" u 1:4:3 w filledcurves below title "above","" u 1:4 w lines title "avg";
+set title "16 nodes"
 unset key
-set title "64 nodes"
-plot "link_64_steps" u 1:4:2 w filledcurves above title "below", "" u 1:4:3 w filledcurves below title "above","" u 1:4 w lines title "avg";
+plot "link_16_steps" u 1:4:2 w filledcurves above title "below", "" u 1:4:3 w filledcurves below title "above","" u 1:4 w lines title "avg";
+set title "25 nodes"
 unset key
-set title "81 nodes"
-plot "link_81_steps" u 1:4:2 w filledcurves above title "below", "" u 1:4:3 w filledcurves below title "above","" u 1:4 w lines title "avg";
+plot "link_25_steps" u 1:4:2 w filledcurves above title "below", "" u 1:4:3 w filledcurves below title "above","" u 1:4 w lines title "avg";
+
+
+#set title "36 nodes"
+#plot "link_36_steps" u 1:4:2 w filledcurves above title "below", "" u 1:4:3 w filledcurves below title "above","" u 1:4 w lines title "avg";
+#set xlabel ""
+#set ylabel ""
+#unset key
+#set title "49 nodes"
+#plot "link_49_steps" u 1:4:2 w filledcurves above title "below", "" u 1:4:3 w filledcurves below title "above","" u 1:4 w lines title "avg";
+#unset key
+#set title "64 nodes"
+#plot "link_64_steps" u 1:4:2 w filledcurves above title "below", "" u 1:4:3 w filledcurves below title "above","" u 1:4 w lines title "avg";
+#unset key
+#set title "81 nodes"
+#plot "link_81_steps" u 1:4:2 w filledcurves above title "below", "" u 1:4:3 w filledcurves below title "above","" u 1:4 w lines title "avg";
 
 pause -1

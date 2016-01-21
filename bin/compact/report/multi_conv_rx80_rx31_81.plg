@@ -11,7 +11,6 @@ set title "vanilla"
 plot "vanilla_rx80_rx31_81_steps" u 1:4:2 w filledcurves above title "below", "" u 1:4:3 w filledcurves below title "above","" u 1:4 w lines title "avg";
 
 set ylabel ""
-set xlabel ""
 unset key
 set title "link 10"
 plot "link_rx80_rx31_81_steps" u 1:4:2 w filledcurves above title "below", "" u 1:4:3 w filledcurves below title "above","" u 1:4 w lines title "avg";
