@@ -1,9 +1,18 @@
 set auto x
-set style data histogram
-set style histogram cluster gap 1
+set style histogram cluster gap 10
 set style fill solid border -1
-set yrange[0:100]
-set boxwidth 0.9
+
+set xrange[-1:2]
+set multiplot layout 2,1
+
+set boxwidth 0.1
 set xtic scale 0
-plot "errorbar" u 2:xtic(1) ti col , "" u 3 ti col, "" u 4 ti col
+plot "errorbar" u ($0-0.2):2:3 w boxerrorbars title col,\
+"" u 0:4:5:xtic(1) w boxerrorbars title col,\
+"" u ($0+0.2):6:7 w boxerrorbars title col;
+
+set yrange[0:90]
+plot "errorbar2" u ($0-0.2):2:3 w boxerrorbars title col,\
+"" u 0:4:5:xtic(1) w boxerrorbars title col,\
+"" u ($0+0.2):6:7 w boxerrorbars title col;
 pause -1
