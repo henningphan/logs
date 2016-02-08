@@ -7,12 +7,12 @@ set multiplot layout 2,1
 
 set boxwidth 0.1
 set xtic scale 0
-plot "errorbar" u ($0-0.2):2:3 w boxerrorbars title col,\
+plot "/tmp/errorbar_81" u ($0-0.2):2:3 w boxerrorbars title col,\
 "" u 0:4:5:xtic(1) w boxerrorbars title col,\
 "" u ($0+0.2):6:7 w boxerrorbars title col;
 
 set yrange[0:90]
-plot "errorbar2" u ($0-0.2):2:3 w boxerrorbars title col,\
+plot "/tmp/errorbar_81" u ($0-0.2):2:3 w boxerrorbars title col,\
 "" u 0:4:5:xtic(1) w boxerrorbars title col,\
 "" u ($0+0.2):6:7 w boxerrorbars title col;
 pause -1

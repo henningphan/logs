@@ -1,7 +1,7 @@
 set yrange[0:90]
 set xrange[0:100000]
-set ylabel "# assigned nodes"
-set xlabel "seconds"
+set ylabel "# Active nodes"
+set xlabel "Seconds"
 set xtics("20" 20000, "40" 40000, "60" 60000, "80" 80000, "100" 100000)
 plot "link_20_81_steps" u 1:4:2 w filledcurves above title "below", "" u 1:4:3 w filledcurves below title "above","" u 1:4 w lines title "avg";
 pause -1
