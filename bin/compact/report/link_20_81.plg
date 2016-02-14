@@ -1,7 +1,11 @@
 set yrange[0:90]
+f(x)=x**3
+set yrange[0:f(85)]
+set ytics ("20" f(20), "30" f(30),"40" f(40),"50" f(50), "60" f(60), "70" f(70), "80" f(80), "85" f(85), "90" f(90))
+
 set xrange[0:100000]
 set ylabel "# Active nodes"
 set xlabel "Seconds"
 set xtics("20" 20000, "40" 40000, "60" 60000, "80" 80000, "100" 100000)
-plot "link_20_81_steps" u 1:4:2 w filledcurves above title "below", "" u 1:4:3 w filledcurves below title "above","" u 1:4 w lines title "avg";
+plot "link_20_81_steps" u 1:(f($4)):(f($2)) w filledcurves above title "below", "" u 1:(f($4)):(f($3)) w filledcurves below title "above","" u 1:(f($4)) w lines title "avg";
 pause -1
