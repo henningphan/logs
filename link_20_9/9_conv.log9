@@ -1,0 +1,47 @@
+Random seed: 8
+4419 1 time=(9)
+4496 5 ~Ed
+4497 5 time=(6)
+4685 4 ~Ed
+4686 4 drop=(2)
+4686 2 ~Ed
+4687 2 drop=(2)
+4763 2 R~~Ed
+4763 4 R~~Ed
+4764 2 drop=(2)
+4764 4 drop=(2)
+4764 8 ~Ed
+4765 8 drop=(2)
+5025 6 ~Ed
+5026 6 drop=(2)
+5029 7 ~Ed
+5030 7 time=(4)
+5128 4 R~~Ed
+5129 4 time=(14)
+5135 1 ~~Ed
+5136 7 $~~Ed
+5136 1 drop=(2)
+5137 7 drop=(2)
+5141 3 ~Ed
+5142 3 time=(17)
+5155 2 R~~Ed
+5156 2 time=(16)
+5164 3 n~~Ed
+5165 3 drop=(2)
+5320 8 R~~Ed
+5321 8 time=(9)
+5328 9 ~Ed
+5329 9 drop=(2)
+5375 3 R~~Ed
+5376 3 time=(13)
+5553 6 R~~Ed
+5554 6 time=(7)
+5745 9 R~~Ed
+5746 9 time=(2)
+5841 1 R~~Ed
+5842 1 time=(9)
+6020 7 R~~Ed
+6021 7 time=(3)
+TEST TIMEOUT
+TEST FAILED
+Test ended at simulation time: 300000000
