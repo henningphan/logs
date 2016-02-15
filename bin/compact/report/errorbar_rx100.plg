@@ -1,0 +1,20 @@
+set auto x
+set style histogram cluster gap 10
+set style fill solid border -1
+
+set xrange[-1:2]
+set multiplot layout 2,1
+
+set boxwidth 0.1
+set xtic scale 0
+set ylabel "# Events"
+plot "errorbar_rx100" u ($0-0.2):2:3 w boxerrorbars title col,\
+"" u 0:4:5:xtic(1) w boxerrorbars title col,\
+"" u ($0+0.2):6:7 w boxerrorbars title col;
+
+set yrange[0:90]
+set ylabel "# Active nodes"
+plot "errorbar2_rx100" u ($0-0.2):2:3 w boxerrorbars title col,\
+"" u 0:4:5:xtic(1) w boxerrorbars title col,\
+"" u ($0+0.2):6:7 w boxerrorbars title col;
+pause -1
