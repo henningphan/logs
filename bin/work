@@ -1,4 +1,7 @@
 #!/bin/bash
 ./merge.pl "$1"/* 2>/dev/null| ./avg.pl >avg
 ./merge.pl "$1"/* 2>/dev/null| ./area.pl >area
-join area avg > collection 
+./merge.pl "$1"/* 2>/dev/null| ./median.pl >median
+join area avg > collection2
+join collection2 median > collection
+rm collection2
