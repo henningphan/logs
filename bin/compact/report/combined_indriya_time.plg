@@ -1,0 +1,28 @@
+set multiplot layout 3, 2
+set xtics("20" 20000, "40" 40000, "60" 60000, "80" 80000, "100" 100000, "120" 120000, "140" 140000, "160" 160000, "180" 180000, "200" 200000)
+set ytics("50" 50, "100" 100, "150" 150, "200" 200)
+set y2tics
+set grid x y
+set y2range[0:2000]
+set yrange[0:200]
+set xrange[60000:180000]
+
+set ylabel "#Active nodes"
+set y2label "#Time drop"
+set xlabel "Seconds"
+
+set title "TDMAPST A"
+plot "../../indriya_vanilla_rf_6/0" w steps title "link",  "../../indriya_vanilla_rf_6_time/0" u 1:(($2-640)/10) w steps title"Time drop"
+set title "TDMAPST B"
+plot "../../indriya_vanilla_rf_6/1" w steps title "link",  "../../indriya_vanilla_rf_6_time/1" u 1:(($2-117)/10) w steps title"Time drop"
+
+set title "TDMAwLR_10 C"
+plot "../../indriya_link_10_rf_6/0" w steps title "link",  "../../indriya_link_10_rf_6_time/0" u 1:(($2-360)/10) w steps title"drop"
+set title "TDMAwLR_10 D"
+plot "../../indriya_link_10_rf_6/1" w steps title "link",  "../../indriya_link_10_rf_6_time/1" u 1:(($2-630)/10) w steps title"drop"
+
+set title "TDMAwLR_20 E"
+plot "../../indriya_link_20_rf_6/0" w steps title "link",  "../../indriya_link_20_rf_6_time/0" u 1:(($2-346)/10) w steps title"Time drop"
+set title "TDMAwLR_20 F"
+plot "../../indriya_link_20_rf_6/1" w steps title "link",  "../../indriya_link_20_rf_6_time/1" u 1:(($2-86)/10) w steps title"Time drop"
+pause -1
