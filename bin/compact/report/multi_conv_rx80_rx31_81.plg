@@ -1,3 +1,4 @@
+set grid x y
 set yrange[0:90]
 f(x)=x**3
 set yrange[0:f(85)]

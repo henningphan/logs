@@ -1,3 +1,4 @@
+set grid x y 
 set yrange[0:90]
 set xtics("60" 60000, "100" 100000, "150" 150000, "200" 200000)
 plot "indriya_vanilla_rf_6" u 1:4 w steps title "vanilla",\

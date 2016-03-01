@@ -1,3 +1,4 @@
+set grid x y
 set yrange[0:90]
 set xrange[0:50000]
 set multiplot layout 2,2 title "TDMAwLR_20 code convergence with different # of node" 
@@ -6,29 +7,29 @@ set ylabel "# Active nodes"
 set xtics ("10" 10000, "20" 20000, "30" 30000, "40" 40000,"50" 50000, "100" 100000, "150" 150000, "200" 200000, "250" 250000, "300" 300000)
 
 
-#set title "4 nodes"
-#plot "link_20_4" u 1:4:2 w filledcurves above title "below", "" u 1:4:3 w filledcurves below title "above","" u 1:4 w lines title "avg";
-#set title "9 nodes"
-#unset key
-#plot "link_20_9" u 1:4:2 w filledcurves above title "below", "" u 1:4:3 w filledcurves below title "above","" u 1:4 w lines title "avg";
-#set title "16 nodes"
-#unset key
-#plot "link_20_16" u 1:4:2 w filledcurves above title "below", "" u 1:4:3 w filledcurves below title "above","" u 1:4 w lines title "avg";
-#set title "25 nodes"
-#unset key
-#plot "link_20_25" u 1:4:2 w filledcurves above title "below", "" u 1:4:3 w filledcurves below title "above","" u 1:4 w lines title "avg";
+set title "4 nodes"
+plot "link_20_4" u 1:4:2 w filledcurves above title "below", "" u 1:4:3 w filledcurves below title "above","" u 1:4 w lines title "avg";
+set title "9 nodes"
+unset key
+plot "link_20_9" u 1:4:2 w filledcurves above title "below", "" u 1:4:3 w filledcurves below title "above","" u 1:4 w lines title "avg";
+set title "16 nodes"
+unset key
+plot "link_20_16" u 1:4:2 w filledcurves above title "below", "" u 1:4:3 w filledcurves below title "above","" u 1:4 w lines title "avg";
+set title "25 nodes"
+unset key
+plot "link_20_25" u 1:4:2 w filledcurves above title "below", "" u 1:4:3 w filledcurves below title "above","" u 1:4 w lines title "avg";
 
 
-set title "36 nodes"
-plot "link_20_36" u 1:4:2 w filledcurves above title "below", "" u 1:4:3 w filledcurves below title "above","" u 1:4 w lines title "avg";
-unset key
-set title "49 nodes"
-plot "link_20_49" u 1:4:2 w filledcurves above title "below", "" u 1:4:3 w filledcurves below title "above","" u 1:4 w lines title "avg";
-unset key
-set title "64 nodes"
-plot "link_20_64" u 1:4:2 w filledcurves above title "below", "" u 1:4:3 w filledcurves below title "above","" u 1:4 w lines title "avg";
-unset key
-set title "81 nodes"
-plot "link_20_81" u 1:4:2 w filledcurves above title "below", "" u 1:4:3 w filledcurves below title "above","" u 1:4 w lines title "avg";
+#set title "36 nodes"
+#plot "link_20_36" u 1:4:2 w filledcurves above title "below", "" u 1:4:3 w filledcurves below title "above","" u 1:4 w lines title "avg";
+#unset key
+#set title "49 nodes"
+#plot "link_20_49" u 1:4:2 w filledcurves above title "below", "" u 1:4:3 w filledcurves below title "above","" u 1:4 w lines title "avg";
+#unset key
+#set title "64 nodes"
+#plot "link_20_64" u 1:4:2 w filledcurves above title "below", "" u 1:4:3 w filledcurves below title "above","" u 1:4 w lines title "avg";
+#unset key
+#set title "81 nodes"
+#plot "link_20_81" u 1:4:2 w filledcurves above title "below", "" u 1:4:3 w filledcurves below title "above","" u 1:4 w lines title "avg";
 
 pause -1
