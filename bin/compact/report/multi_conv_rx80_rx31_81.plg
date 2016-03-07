@@ -6,19 +6,19 @@ set ytics ("20" f(20), "30" f(30),"40" f(40),"50" f(50), "60" f(60), "70" f(70),
 set xrange[0:100000]
 set xlabel "Seconds"
 set ylabel "# Active nodes"
-set multiplot layout 1, 3
+set multiplot layout 1, 3 title "80% and 31% Transmission Success Rate"
 set xtics ("20" 20000,"40" 40000, "60" 60000, "80" 80000, "100" 100000)
 
 #set key on bottom right
 
-set title "vanilla"
+set title "TDMAPST"
 plot "vanilla_rx80_rx31_81_steps" u 1:(f($4)):(f($2)) w filledcurves above title "below", "" u 1:(f($4)):(f($3)) w filledcurves below title "above","" u 1:(f($4)) w lines title "avg";
 
 unset key
-set title "link 10"
+set title "TDMAwLR_10"
 plot "link_rx80_rx31_81_steps" u 1:(f($4)):(f($2)) w filledcurves above title "below", "" u 1:(f($4)):(f($3)) w filledcurves below title "above","" u 1:(f($4)) w lines title "avg";
 
-set title "link 20"
+set title "TDMAwLR_20" 
 plot "link_20_81_rx80_rx31_steps" u 1:(f($4)):(f($2)) w filledcurves above title "below", "" u 1:(f($4)):(f($3)) w filledcurves below title "above","" u 1:(f($4)) w lines title "avg";
 
 pause -1
