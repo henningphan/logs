@@ -1,8 +1,13 @@
-#use singleGraph to clean the data from simulations
-for f in ../data/xx_con.log*; do ./singleGraph "$f" > ./data_single.xx/${f##*/}; done
+# Root folder contains raw Cooja data in folders, (indriya raw data is stored on the indriya website)
 
-# use merger to create a joined file
- ./merge.pl ./data_single/*
+# /root/bin contains processed_1 data, which is cooja and indriya processed data, in folders and scripts for processing
 
-#area.pl uses the output of merge.pl
-./merge.pl ./data_single/* | ./area.pl > output
+# /root/bin/compact/report contains processed_2 data and gnuplot scripts to generate the plots
+
+# Tutorial from raw data to plots
+cd ./bin
+mkdir $folder
+for x in ../$folder/*; do ./singleGraph $x > ${x:1} ;done  # create process_1 data and save it in bin
+./work $folder  # create process_2 which is outputted as collection
+mv collection compact/report/$someName
+
